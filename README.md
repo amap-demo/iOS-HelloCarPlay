@@ -9,11 +9,19 @@
 ## 功能描述 ##
 Demo中主要演示了 AMapNaviDriveView 如何适配CarPlay的UI界面，并通过模拟导航展示了整个导航过程，包含了诱导面板、路口放大图的展示、全览、放大缩小拖动地图等操作。
 
+## demo运行效果图 ##
+
+![Screenshot](./ScreenShots/0.png)
+![Screenshot](./ScreenShots/1.png)
+![Screenshot](./ScreenShots/2.png)
+![Screenshot](./ScreenShots/3.png)
+
 ## 核心类/接口 ##
 | 类 | 说明 |
 | -----|:-----:|
 | AMapNaviDriveView	| 驾车导航界面 |
-| AMapNaviDriveManager sharedInstance] | 驾车导航管理类 |
+| [AMapNaviDriveManager sharedInstance] | 驾车导航管理类 |
+| <CarPlay/CarPlay.h> | CarPlay相关类 |
 
 ## 核心难点 ##
 
