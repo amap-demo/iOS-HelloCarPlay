@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D88F506D7D25782A683BDE93 /* libPods-HelloCarPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9767F012DCCB46993E00FC79 /* libPods-HelloCarPlay.a */; };
+		D90556A2213FAFE0005B00FA /* default_navi_browse_ver_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D90556A1213FAFDF005B00FA /* default_navi_browse_ver_normal@2x.png */; };
+		D90556A4213FB495005B00FA /* default_navi_browse_ver_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D90556A3213FB495005B00FA /* default_navi_browse_ver_selected@2x.png */; };
+		D9F44A48213E92D10010F5E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F44A47213E92D10010F5E0 /* AppDelegate.m */; };
+		D9F44A4B213E92D10010F5E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F44A4A213E92D10010F5E0 /* ViewController.m */; };
+		D9F44A4E213E92D10010F5E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F44A4C213E92D10010F5E0 /* Main.storyboard */; };
+		D9F44A50213E92D40010F5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F44A4F213E92D40010F5E0 /* Assets.xcassets */; };
+		D9F44A53213E92D40010F5E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F44A51213E92D40010F5E0 /* LaunchScreen.storyboard */; };
+		D9F44A56213E92D40010F5E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F44A55213E92D40010F5E0 /* main.m */; };
+		D9F44A5E213E94A50010F5E0 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F44A5D213E94A50010F5E0 /* HomeKit.framework */; };
+		D9F44A63213EAB5B0010F5E0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F44A61213EAB5B0010F5E0 /* MainViewController.m */; };
+		D9F44A64213EAB5B0010F5E0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9F44A62213EAB5B0010F5E0 /* MainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2721356D8397EC4CCA3089EB /* Pods-HelloCarPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCarPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloCarPlay/Pods-HelloCarPlay.release.xcconfig"; sourceTree = "<group>"; };
+		9767F012DCCB46993E00FC79 /* libPods-HelloCarPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloCarPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3E102CF720E8773704BAF9 /* Pods-HelloCarPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCarPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloCarPlay/Pods-HelloCarPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		D90556A1213FAFDF005B00FA /* default_navi_browse_ver_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_navi_browse_ver_normal@2x.png"; sourceTree = "<group>"; };
+		D90556A3213FB495005B00FA /* default_navi_browse_ver_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_navi_browse_ver_selected@2x.png"; sourceTree = "<group>"; };
+		D9F44A43213E92D10010F5E0 /* HelloCarPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCarPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F44A46213E92D10010F5E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D9F44A47213E92D10010F5E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D9F44A49213E92D10010F5E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D9F44A4A213E92D10010F5E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D9F44A4D213E92D10010F5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9F44A4F213E92D40010F5E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9F44A52213E92D40010F5E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9F44A54213E92D40010F5E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9F44A55213E92D40010F5E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9F44A5D213E94A50010F5E0 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		D9F44A5F213E94A50010F5E0 /* HelloCarPlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HelloCarPlay.entitlements; sourceTree = "<group>"; };
+		D9F44A60213EAB5B0010F5E0 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D9F44A61213EAB5B0010F5E0 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		D9F44A62213EAB5B0010F5E0 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9F44A40213E92D10010F5E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F44A5E213E94A50010F5E0 /* HomeKit.framework in Frameworks */,
+				D88F506D7D25782A683BDE93 /* libPods-HelloCarPlay.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EB7C1CD4468CDD29E111BA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A3E102CF720E8773704BAF9 /* Pods-HelloCarPlay.debug.xcconfig */,
+				2721356D8397EC4CCA3089EB /* Pods-HelloCarPlay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D90556A0213FAFDF005B00FA /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D90556A1213FAFDF005B00FA /* default_navi_browse_ver_normal@2x.png */,
+				D90556A3213FB495005B00FA /* default_navi_browse_ver_selected@2x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		D9F44A3A213E92D10010F5E0 = {
+			isa = PBXGroup;
+			children = (
+				D9F44A45213E92D10010F5E0 /* HelloCarPlay */,
+				D9F44A44213E92D10010F5E0 /* Products */,
+				D9F44A5C213E94A50010F5E0 /* Frameworks */,
+				8EB7C1CD4468CDD29E111BA7 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D9F44A44213E92D10010F5E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9F44A43213E92D10010F5E0 /* HelloCarPlay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9F44A45213E92D10010F5E0 /* HelloCarPlay */ = {
+			isa = PBXGroup;
+			children = (
+				D9F44A5F213E94A50010F5E0 /* HelloCarPlay.entitlements */,
+				D9F44A46213E92D10010F5E0 /* AppDelegate.h */,
+				D9F44A47213E92D10010F5E0 /* AppDelegate.m */,
+				D9F44A49213E92D10010F5E0 /* ViewController.h */,
+				D9F44A4A213E92D10010F5E0 /* ViewController.m */,
+				D9F44A60213EAB5B0010F5E0 /* MainViewController.h */,
+				D9F44A61213EAB5B0010F5E0 /* MainViewController.m */,
+				D9F44A62213EAB5B0010F5E0 /* MainViewController.xib */,
+				D9F44A4C213E92D10010F5E0 /* Main.storyboard */,
+				D90556A0213FAFDF005B00FA /* Image */,
+				D9F44A4F213E92D40010F5E0 /* Assets.xcassets */,
+				D9F44A51213E92D40010F5E0 /* LaunchScreen.storyboard */,
+				D9F44A54213E92D40010F5E0 /* Info.plist */,
+				D9F44A55213E92D40010F5E0 /* main.m */,
+			);
+			path = HelloCarPlay;
+			sourceTree = "<group>";
+		};
+		D9F44A5C213E94A50010F5E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9F44A5D213E94A50010F5E0 /* HomeKit.framework */,
+				9767F012DCCB46993E00FC79 /* libPods-HelloCarPlay.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9F44A42213E92D10010F5E0 /* HelloCarPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F44A59213E92D40010F5E0 /* Build configuration list for PBXNativeTarget "HelloCarPlay" */;
+			buildPhases = (
+				6EF3B6D662180871BF65E1CE /* [CP] Check Pods Manifest.lock */,
+				D9F44A3F213E92D10010F5E0 /* Sources */,
+				D9F44A40213E92D10010F5E0 /* Frameworks */,
+				D9F44A41213E92D10010F5E0 /* Resources */,
+				A65138B316B1A5984FFF9233 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloCarPlay;
+			productName = HelloCarPlay;
+			productReference = D9F44A43213E92D10010F5E0 /* HelloCarPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9F44A3B213E92D10010F5E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = autonavi;
+				TargetAttributes = {
+					D9F44A42213E92D10010F5E0 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D9F44A3E213E92D10010F5E0 /* Build configuration list for PBXProject "HelloCarPlay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9F44A3A213E92D10010F5E0;
+			productRefGroup = D9F44A44213E92D10010F5E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9F44A42213E92D10010F5E0 /* HelloCarPlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9F44A41213E92D10010F5E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F44A53213E92D40010F5E0 /* LaunchScreen.storyboard in Resources */,
+				D9F44A50213E92D40010F5E0 /* Assets.xcassets in Resources */,
+				D9F44A4E213E92D10010F5E0 /* Main.storyboard in Resources */,
+				D9F44A64213EAB5B0010F5E0 /* MainViewController.xib in Resources */,
+				D90556A2213FAFE0005B00FA /* default_navi_browse_ver_normal@2x.png in Resources */,
+				D90556A4213FB495005B00FA /* default_navi_browse_ver_selected@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EF3B6D662180871BF65E1CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloCarPlay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A65138B316B1A5984FFF9233 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelloCarPlay/Pods-HelloCarPlay-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/AMapNavi/AMapNaviKit.framework/AMapNavi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMapNavi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloCarPlay/Pods-HelloCarPlay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9F44A3F213E92D10010F5E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F44A4B213E92D10010F5E0 /* ViewController.m in Sources */,
+				D9F44A56213E92D40010F5E0 /* main.m in Sources */,
+				D9F44A48213E92D10010F5E0 /* AppDelegate.m in Sources */,
+				D9F44A63213EAB5B0010F5E0 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D9F44A4C213E92D10010F5E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9F44A4D213E92D10010F5E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9F44A51213E92D40010F5E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9F44A52213E92D40010F5E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9F44A57213E92D40010F5E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D9F44A58213E92D40010F5E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9F44A5A213E92D40010F5E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A3E102CF720E8773704BAF9 /* Pods-HelloCarPlay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HelloCarPlay/HelloCarPlay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FMAU64797;
+				INFOPLIST_FILE = HelloCarPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.HelloCarPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9F44A5B213E92D40010F5E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2721356D8397EC4CCA3089EB /* Pods-HelloCarPlay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HelloCarPlay/HelloCarPlay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FMAU64797;
+				INFOPLIST_FILE = HelloCarPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.HelloCarPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9F44A3E213E92D10010F5E0 /* Build configuration list for PBXProject "HelloCarPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F44A57213E92D40010F5E0 /* Debug */,
+				D9F44A58213E92D40010F5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F44A59213E92D40010F5E0 /* Build configuration list for PBXNativeTarget "HelloCarPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F44A5A213E92D40010F5E0 /* Debug */,
+				D9F44A5B213E92D40010F5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9F44A3B213E92D10010F5E0 /* Project object */;
+}
