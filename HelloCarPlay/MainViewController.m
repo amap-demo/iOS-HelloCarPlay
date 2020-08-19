@@ -8,9 +8,9 @@
 
 #import "MainViewController.h"
 #import <AMapNaviKit/AMapNaviKit.h>
-#import <MAMapKit/MAMapKit.h>
+#import <AMapNaviKit/MAMapKit.h>
 
-@interface MainViewController () <AMapNaviDriveManagerDelegate, AMapNaviDriveDataRepresentable, AMapNaviDriveViewDelegate>
+@interface MainViewController () <AMapNaviDriveManagerDelegate, AMapNaviDriveDataRepresentable, AMapNaviDriveViewDelegate, MAMapViewDelegate>
 
 @property (nonatomic, strong) AMapNaviPoint *startPoint;
 @property (nonatomic, strong) AMapNaviPoint *endPoint;
@@ -54,10 +54,12 @@
     
     //driveView
     self.driveView.delegate = self;
+    self.driveView.mapViewDelegate = self;
     self.driveView.showUIElements = NO;
     self.driveView.showGreyAfterPass = YES;
     self.driveView.autoZoomMapLevel = YES;
-    self.driveView.autoSwitchDayNightType = YES;
+    self.driveView.mapViewModeType = AMapNaviViewMapModeTypeDayNightAuto;
+    self.driveView.mapViewDelegate = self;
     self.driveView.autoSwitchShowModeToCarPositionLocked = YES;
     self.driveView.trackingMode = AMapNaviViewTrackingModeCarNorth;
     self.driveView.logoCenter = CGPointMake(self.driveView.logoCenter.x - 3, self.driveView.logoCenter.y + 30);
@@ -80,17 +82,6 @@
                                                                     wayPoints:nil
                                                               drivingStrategy:AMapNaviDrivingStrategySingleDefault];
     
-    //由于目前 AMapNaviDriveView 没有透出 MAMapView，可以通过以下方法拿一下 MAMapView，后续版本会通过接口支持。
-    //拿到 MAMapView 主要是为了做地图的滑动，如果不需要该功能，可以不拿。注意：不要对 MAMapView 做过多操作，如重新设置delegate，会导致 AMapNaviDriveView 功能不可用
-    if ([self.driveView respondsToSelector:NSSelectorFromString(@"naviMapView")]) {
-        UIView *temp = [self.driveView performSelector:NSSelectorFromString(@"naviMapView")];
-        for (UIView *view in temp.subviews) {
-            if ([view isKindOfClass:[MAMapView class]]) {
-                self.mapView = (MAMapView *)view;
-                break;
-            }
-        }
-    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -253,7 +244,7 @@
     if (!center) {
         CGFloat xStart = self.topInfoBgView.frame.origin.x + self.topInfoBgView.frame.size.width;
         CGFloat xEnd = self.trafficBarView.frame.origin.x;
-        CGFloat xAreaMiddleInAll = (xEnd - xStart) / 2 + xStart;
+        CGFloat xAreaMiddleInAll = (xEnd - xStart) / 2 + xStart - self.driveView.frame.origin.x;
         x = xAreaMiddleInAll / self.driveView.bounds.size.width;
         
         if (x <= 0 || x >= 1 ) {
@@ -275,6 +266,14 @@
         self.crossImageView.hidden = YES;
         self.crossImageView.image = nil;
     }
+}
+
+#pragma mark - MAMapViewDelegate
+
+- (void)mapViewDidFinishLoadingMap:(MAMapView *)mapView {
+    //由于目前 AMapNaviDriveView 没有透出 MAMapView，可以通过以下方法拿一下 MAMapView，后续版本会通过接口支持。
+    //拿到 MAMapView 主要是为了做地图的滑动，如果不需要该功能，可以不拿。注意：不要对 MAMapView 做过多操作，如重新设置delegate，会导致 AMapNaviDriveView 功能不可用
+    self.mapView = mapView;
 }
 
 #pragma mark - AMapNaviDriveViewDelegate

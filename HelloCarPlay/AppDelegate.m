@@ -24,7 +24,7 @@
 
 #pragma mark - CPApplicationDelegate
 
-- (void)application:(nonnull UIApplication *)application didConnectCarInterfaceController:(nonnull CPInterfaceController *)interfaceController toWindow:(nonnull CPWindow *)window {
+- (void)application:(UIApplication *)application didConnectCarInterfaceController:(CPInterfaceController *)interfaceController toWindow:(CPWindow *)window {
     NSLog(@"AMapNavi Connected To Carplay!");
     
     self.interfaceController = interfaceController;
@@ -37,7 +37,7 @@
     [self.interfaceController setRootTemplate:self.mainVC.mapTemplate animated:YES];
 }
 
-- (void)application:(nonnull UIApplication *)application didDisconnectCarInterfaceController:(nonnull CPInterfaceController *)interfaceController fromWindow:(nonnull CPWindow *)window {
+- (void)application:(UIApplication *)application didDisconnectCarInterfaceController:(CPInterfaceController *)interfaceController fromWindow:(CPWindow *)window {
     NSLog(@"AMapNavi Disconnected To Carplay!");
 }
 
