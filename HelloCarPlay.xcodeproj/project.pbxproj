@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5E894DB24EF650C009F15F7 /* DriveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E894D924EF650C009F15F7 /* DriveViewController.m */; };
+		A5E894DC24EF650C009F15F7 /* DriveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E894DA24EF650C009F15F7 /* DriveViewController.xib */; };
 		D88F506D7D25782A683BDE93 /* libPods-HelloCarPlay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9767F012DCCB46993E00FC79 /* libPods-HelloCarPlay.a */; };
 		D90556A2213FAFE0005B00FA /* default_navi_browse_ver_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D90556A1213FAFDF005B00FA /* default_navi_browse_ver_normal@2x.png */; };
 		D90556A4213FB495005B00FA /* default_navi_browse_ver_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D90556A3213FB495005B00FA /* default_navi_browse_ver_selected@2x.png */; };
@@ -25,6 +27,9 @@
 		2721356D8397EC4CCA3089EB /* Pods-HelloCarPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCarPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloCarPlay/Pods-HelloCarPlay.release.xcconfig"; sourceTree = "<group>"; };
 		9767F012DCCB46993E00FC79 /* libPods-HelloCarPlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloCarPlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3E102CF720E8773704BAF9 /* Pods-HelloCarPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloCarPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloCarPlay/Pods-HelloCarPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		A5E894D824EF650C009F15F7 /* DriveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DriveViewController.h; sourceTree = "<group>"; };
+		A5E894D924EF650C009F15F7 /* DriveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DriveViewController.m; sourceTree = "<group>"; };
+		A5E894DA24EF650C009F15F7 /* DriveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DriveViewController.xib; sourceTree = "<group>"; };
 		D90556A1213FAFDF005B00FA /* default_navi_browse_ver_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_navi_browse_ver_normal@2x.png"; sourceTree = "<group>"; };
 		D90556A3213FB495005B00FA /* default_navi_browse_ver_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_navi_browse_ver_selected@2x.png"; sourceTree = "<group>"; };
 		D9F44A43213E92D10010F5E0 /* HelloCarPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCarPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +109,9 @@
 				D9F44A60213EAB5B0010F5E0 /* MainViewController.h */,
 				D9F44A61213EAB5B0010F5E0 /* MainViewController.m */,
 				D9F44A62213EAB5B0010F5E0 /* MainViewController.xib */,
+				A5E894D824EF650C009F15F7 /* DriveViewController.h */,
+				A5E894D924EF650C009F15F7 /* DriveViewController.m */,
+				A5E894DA24EF650C009F15F7 /* DriveViewController.xib */,
 				D9F44A4C213E92D10010F5E0 /* Main.storyboard */,
 				D90556A0213FAFDF005B00FA /* Image */,
 				D9F44A4F213E92D40010F5E0 /* Assets.xcassets */,
@@ -196,6 +204,7 @@
 				D9F44A64213EAB5B0010F5E0 /* MainViewController.xib in Resources */,
 				D90556A2213FAFE0005B00FA /* default_navi_browse_ver_normal@2x.png in Resources */,
 				D90556A4213FB495005B00FA /* default_navi_browse_ver_selected@2x.png in Resources */,
+				A5E894DC24EF650C009F15F7 /* DriveViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E894DB24EF650C009F15F7 /* DriveViewController.m in Sources */,
 				D9F44A4B213E92D10010F5E0 /* ViewController.m in Sources */,
 				D9F44A56213E92D40010F5E0 /* main.m in Sources */,
 				D9F44A48213E92D10010F5E0 /* AppDelegate.m in Sources */,

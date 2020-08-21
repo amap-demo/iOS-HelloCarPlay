@@ -1,7 +1,7 @@
 PODS:
-  - AMapFoundation (1.6.3)
-  - AMapNavi (7.4.0):
-    - AMapFoundation (~> 1.6.3)
+  - AMapFoundation (1.6.4)
+  - AMapNavi (7.6.0):
+    - AMapFoundation (~> 1.6.4)
 
 DEPENDENCIES:
   - AMapNavi
@@ -12,8 +12,8 @@ SPEC REPOS:
     - AMapNavi
 
 SPEC CHECKSUMS:
-  AMapFoundation: 9ed923193b357ebb30a073e9fe255d3c24054d5a
-  AMapNavi: fb36f9052867d33254a9a168b77952d1aa74e965
+  AMapFoundation: 3638198dfa40be54648570c3520edefad288286b
+  AMapNavi: ca9fe7272aff9cede055e4cbfcb462d5a4896f8a
 
 PODFILE CHECKSUM: f6ad27d7a232bbb1229a5ceff2f8c242a84ca9ab
 

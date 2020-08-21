@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DriveViewController.h"
 
 @interface ViewController ()
 
@@ -19,5 +20,13 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)startNavi:(id)sender {
+    DriveViewController *driveVC = [[DriveViewController alloc] initWithNibName:@"DriveViewController" bundle:nil];
+    [self.navigationController pushViewController:driveVC animated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.navigationController.navigationBarHidden = NO;
+}
 
 @end

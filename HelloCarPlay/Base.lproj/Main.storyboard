@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kwv-rU-a5m">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -7,6 +7,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Wqu-Sh-G3G">
+            <objects>
+                <navigationController id="kwv-rU-a5m" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JBB-bu-FfU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ocU-Pl-iRB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RKM-U6-4Dl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1542" y="-170"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -20,19 +36,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高德导航SDK CarPlay Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0d-nD-ukZ">
-                                <rect key="frame" x="67.5" y="50" width="240" height="23"/>
+                                <rect key="frame" x="67.5" y="94" width="240" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. 需要添加 .entitlements文件 里面包含 Key com.apple.developer.carplay-maps" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHX-ih-PwX">
-                                <rect key="frame" x="16" y="133" width="343" height="36"/>
+                                <rect key="frame" x="16" y="177" width="343" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. 模拟器调试路径： I/O → External displays → CarPlay" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgo-nU-jdt">
-                                <rect key="frame" x="16" y="189" width="343" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. 点击开始导航后，就可以按步骤3 打开 CarPlay 模拟器，实现同显" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgo-nU-jdt">
+                                <rect key="frame" x="16" y="233" width="343" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXW-j6-jX7">
+                                <rect key="frame" x="107.5" y="388.5" width="160" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Pbv-BD-5A7"/>
+                                    <constraint firstAttribute="width" constant="160" id="gtF-W5-Fd3"/>
+                                </constraints>
+                                <state key="normal" title="开始导航"/>
+                                <connections>
+                                    <action selector="startNavi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M9t-hR-1TZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. 模拟器调试路径： I/O → External displays → CarPlay" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxW-3x-SlH">
+                                <rect key="frame" x="16" y="289" width="343" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -41,19 +74,25 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Lgo-nU-jdt" firstAttribute="trailing" secondItem="iHX-ih-PwX" secondAttribute="trailing" id="6hV-x9-Jbg"/>
+                            <constraint firstItem="UXW-j6-jX7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9KA-SG-ZfS"/>
                             <constraint firstItem="iHX-ih-PwX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="AsZ-hc-b9N"/>
                             <constraint firstItem="Lgo-nU-jdt" firstAttribute="leading" secondItem="iHX-ih-PwX" secondAttribute="leading" id="Ksc-Xy-hHl"/>
                             <constraint firstItem="B0d-nD-ukZ" firstAttribute="top" secondItem="ggT-yC-Hdy" secondAttribute="bottom" constant="50" id="Lfw-tY-urR"/>
                             <constraint firstItem="B0d-nD-ukZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vpd-Ix-H4h"/>
+                            <constraint firstItem="WxW-3x-SlH" firstAttribute="trailing" secondItem="Lgo-nU-jdt" secondAttribute="trailing" id="YCI-ub-Kzc"/>
                             <constraint firstItem="Lgo-nU-jdt" firstAttribute="top" secondItem="iHX-ih-PwX" secondAttribute="bottom" constant="20" id="Zyb-xV-geJ"/>
+                            <constraint firstItem="UXW-j6-jX7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="jaU-HC-k2i"/>
                             <constraint firstItem="iHX-ih-PwX" firstAttribute="top" secondItem="B0d-nD-ukZ" secondAttribute="bottom" constant="60" id="jwr-SH-hXd"/>
+                            <constraint firstItem="WxW-3x-SlH" firstAttribute="leading" secondItem="Lgo-nU-jdt" secondAttribute="leading" id="nQP-E8-hw3"/>
+                            <constraint firstItem="WxW-3x-SlH" firstAttribute="top" secondItem="Lgo-nU-jdt" secondAttribute="bottom" constant="20" id="rR6-vQ-H8d"/>
                             <constraint firstAttribute="trailing" secondItem="iHX-ih-PwX" secondAttribute="trailing" constant="16" id="vDr-KO-gxO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="BFj-5K-BjD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.799999999999997" y="25.637181409295355"/>
+            <point key="canvasLocation" x="-569" y="-170"/>
         </scene>
     </scenes>
 </document>

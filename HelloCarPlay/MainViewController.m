@@ -59,7 +59,6 @@
     self.driveView.showGreyAfterPass = YES;
     self.driveView.autoZoomMapLevel = YES;
     self.driveView.mapViewModeType = AMapNaviViewMapModeTypeDayNightAuto;
-    self.driveView.mapViewDelegate = self;
     self.driveView.autoSwitchShowModeToCarPositionLocked = YES;
     self.driveView.trackingMode = AMapNaviViewTrackingModeCarNorth;
     self.driveView.logoCenter = CGPointMake(self.driveView.logoCenter.x - 3, self.driveView.logoCenter.y + 30);
@@ -76,12 +75,6 @@
     [[AMapNaviDriveManager sharedInstance] addDataRepresentative:self.trafficBarView];
     [[AMapNaviDriveManager sharedInstance] addDataRepresentative:self];
     
-    //算路
-    [[AMapNaviDriveManager sharedInstance] calculateDriveRouteWithStartPoints:@[self.startPoint]
-                                                                    endPoints:@[self.endPoint]
-                                                                    wayPoints:nil
-                                                              drivingStrategy:AMapNaviDrivingStrategySingleDefault];
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -91,14 +84,6 @@
 
 - (void)dealloc {
     
-    [[AMapNaviDriveManager sharedInstance] stopNavi];
-    [[AMapNaviDriveManager sharedInstance] removeDataRepresentative:self.driveView];
-    [[AMapNaviDriveManager sharedInstance] removeDataRepresentative:self.trafficBarView];
-    [[AMapNaviDriveManager sharedInstance] removeDataRepresentative:self];
-    [[AMapNaviDriveManager sharedInstance] setDelegate:nil];
-    
-    BOOL success = [AMapNaviDriveManager destroyInstance];
-    NSLog(@"单例是否销毁成功 : %d",success);
 }
 
 #pragma mark - Interface
@@ -186,7 +171,7 @@
     if (type == 0) {
         barButton.title = @"退出";
     } else if (type == 1) {
-        barButton.title = @"进入拖动地图模式";
+        barButton.title = @"拖动";
     } else if (type == 2) {
         barButton.title = @"放大";
     } else if (type == 3) {
@@ -296,15 +281,6 @@
     UIEdgeInsets insets = UIEdgeInsetsMake(top, left, bottom, right);
     
     return insets;
-}
-
-#pragma mark - AMapNaviDriveManager Delegate
-
-- (void)driveManagerOnCalculateRouteSuccess:(AMapNaviDriveManager *)driveManager {
-    NSLog(@"onCalculateRouteSuccess");
-    
-    //算路成功后开始导航
-    [[AMapNaviDriveManager sharedInstance] startEmulatorNavi];
 }
 
 #pragma mark - AMapNaviDriveDataRepresentable
